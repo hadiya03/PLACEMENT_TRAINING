@@ -1,0 +1,7 @@
+n=int(input())
+binary=bin(n)[2:]
+t=binary.replace('0','x')
+t=t.replace('1','0')
+t=t.replace('x','1')
+decimal=int(t,2)
+print(decimal)
