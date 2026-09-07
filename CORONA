@@ -1,0 +1,9 @@
+n=int(input())
+l=[int(x) for x in input().split()]
+m=int(input())
+res=[]
+for num in l:
+    binary=bin(num)[2:]
+    new=binary[:-m]
+    res.append(len(new))
+print(*res)
