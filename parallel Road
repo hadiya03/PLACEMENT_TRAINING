@@ -1,0 +1,15 @@
+N1=int(input())
+N2=int(input())
+A=[int(input()) for i in range(N1)]
+B=[int(input()) for i in range(N2)]
+for i in range(len(B)):
+    A.append(B[i])
+A=set(A)
+final=list(A)
+final.sort()
+
+if len(final)%2!=0:
+    print(final[len(final)//2])
+else:
+    median=(final[len(final)//2-1]+final[len(final)//2])/2
+    print(median)
