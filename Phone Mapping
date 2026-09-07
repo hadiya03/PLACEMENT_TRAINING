@@ -1,0 +1,12 @@
+n=input()
+dic={'2':"abc",'3':"def",'4':"ghi",'5':"jkl",'6':"mno",'7':"pqrs",'8':"tuv",'9':"wxyz"}
+res=[""]
+for i in range(len(n)):
+    s=dic[n[i]]
+    new=[]
+
+    for j in range(len(res)):
+        for k in range(len(s)):
+            new.append(res[j]+s[k])
+    res=new
+print(res)
